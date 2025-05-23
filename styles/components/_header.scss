@@ -1,7 +1,8 @@
 @use '../abstract/variaveis';
+@use '../abstract/mixins';
 
 header {
-    
+
     background: variaveis.$gradiente-primario;
     padding: 2rem;
 
@@ -10,6 +11,50 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
+    }
+
+    #home {
+        max-width: 1040px;
+        @include mixins.margin-central(80%);
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            max-width: 464px;
+
+            h1 {
+                font-size: 42px;
+                color: variaveis.$cor-primaria;
+                margin-bottom: 2rem;
+                font-family: variaveis.$ft-titulos;
+
+                span {
+                    color: variaveis.$cor-secundaria;
+                }
+            }
+
+            .btn-main {
+                width: 280px;
+                height: 66px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border-radius: 66px;
+                background: variaveis.$cor-default;
+                font-size: 1.3rem;
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
 }
