@@ -2,7 +2,6 @@
 @use '../abstract/mixins';
 
 header {
-
     background: variaveis.$gradiente-primario;
     padding: 2rem;
 
@@ -13,7 +12,7 @@ header {
         gap: 1.6rem;
 
         .linha {
-            border-top: px solid black;
+            border-top: 1px solid black;
             width: 80%;
         }
 
@@ -27,7 +26,7 @@ header {
 
             a {
                 text-decoration: none;
-                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria)
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
                 font-weight: 500;
             }
         }
@@ -35,15 +34,13 @@ header {
 
     #home {
         max-width: 1040px;
-        @include mixins.margin-central(80%);
-        width: 80%;
-        margin: 0 auto;
+        @include mixins.margem-central(80%);
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         .textos-home {
-            max-width: 464px;
+            width: 464px;
 
             h1 {
                 font-size: 42px;
@@ -76,5 +73,4 @@ header {
             }
         }
     }
-
 }
