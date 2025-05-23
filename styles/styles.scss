@@ -70,6 +70,17 @@ header {
                     color: $cor-secundaria;
                 }
             }
+
+            .btn-main {
+                width: 280px;
+                height: 66px;
+                color: #fff;
+                border: none;
+                outline: none;
+                border-radius: 66px;
+                background: $cor-default;
+                font-size: 1.3rem;
+            }
         }
 
         .img-home {
